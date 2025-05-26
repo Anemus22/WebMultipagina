@@ -217,7 +217,7 @@ def practice():
         score = 0
         if request.form.get('q1') == '8':
             score += 1
-        if request.form.get('q2') == "cout << 'Hola';":
+        if request.form.get('q2') == "print('Hola')":
             score += 1
         result = f'Tu puntaje: {score}/2'
     return render_template_string(TEMPLATE, title="Práctica python", level=None, practice=True, result=result, progress=100, message=None)
